@@ -1,0 +1,5 @@
+# Used for test when coding
+_test/
+
+# Alias specified
+proxy.conf

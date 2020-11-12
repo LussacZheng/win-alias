@@ -27,7 +27,7 @@ if /i "%_hash_algorithm%"=="SHA1" goto Hash_show
 if /i "%_hash_algorithm%"=="SHA256" goto Hash_show
 if /i "%_hash_algorithm%"=="SHA384" goto Hash_show
 if /i "%_hash_algorithm%"=="SHA512" goto Hash_show
-if /i "%_hash_algorithm%"=="help" goto Hash_show
+if /i "%_hash_algorithm%"=="help" goto Hash_help
 if exist "%_hash_algorithm%" (
     REM then it is a file instead of an algorithm
     set "_hash_default=true"

@@ -17,20 +17,20 @@ Useful alias and utils for Windows CMD.
 
 ## 使用说明
 
-### `alias`
+### [`alias`](alias/alias.cmd)
 
 > - 参数：不接受参数
 
 列出当前可用别名。
 
-### `hash`
+### [`hash`](alias/hash.cmd)
 
 > - 参数：`hash [HashAlgorithm] <file>`
 > - 帮助：`hash help`
 
 输出目标文件的哈希值，并将其哈希值写入剪贴板。
 
-### `hosts`
+### [`hosts`](alias/hosts.cmd)
 
 > - 参数：`hosts [any]`
 
@@ -38,21 +38,21 @@ Useful alias and utils for Windows CMD.
 
 如果附带任意参数，编辑完成后将刷新 DNS 解析缓存。
 
-### `npmls`
+### [`npmls`](alias/npmls.cmd)
 
 > - 参数：不接受参数
 > - 别名：`npm ls -g -depth=0`
 
 列出所有已经全局安装的 npm 包。  
 
-### `open`
+### [`open`](alias/open.cmd)
 
 > - 参数：不接受参数
 > - 别名：`explorer .\`
 
 使用文件资源管理器打开当前工作目录。
 
-### `port`
+### [`port`](alias/port.cmd)
 
 > - 参数：`port <PortNumber>`
 
@@ -60,7 +60,7 @@ Useful alias and utils for Windows CMD.
 
 主要用于获取 PID 号以在任务管理器结束进程。
 
-### `proxy`
+### [`proxy`](alias/proxy.cmd)
 
 > - 参数：`proxy [command]`
 > - 帮助：`proxy help`

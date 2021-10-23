@@ -1,6 +1,6 @@
 # win-alias
 
-Useful alias and utils for Windows CMD.  
+Useful aliases and utilities for Windows CMD.  
 适用于 Windows CMD 的实用别名和命令。
 
 ## 安装
@@ -13,7 +13,8 @@ Useful alias and utils for Windows CMD.
 
    或直接下载 [代码文件](https://github.com/LussacZheng/win-alias/archive/master.zip) 并解压。
 
-2. 将 `alias` 文件夹加入环境变量 `PATH` 。
+2. 在环境变量中新建条目 `WIN_ALIAS` ，并将 `alias` , `git-alias` 文件夹的绝对路径加入此环境变量。
+3. 在环境变量 `Path` 中添加 `%WIN_ALIAS%` 。
 
 ## 使用说明
 
@@ -64,6 +65,7 @@ Useful alias and utils for Windows CMD.
 
 > - 参数：`proxy [command]`
 > - 帮助：`proxy help`
+> - 配置：`alias/proxy.conf`
 
 快速为当前 CMD 窗口启用/禁用代理。
 

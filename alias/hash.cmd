@@ -34,7 +34,7 @@ if exist "%_hash_algorithm%" (
     set "_hash_algorithm=SHA256"
     goto Hash_show
 )
-echo hash %_hash_algorithm%: unknown or unsupported algorithm, or file not specific
+echo hash %_hash_algorithm%: unknown or unsupported algorithm, or file not specified/found.
 echo. && goto Hash_help
 goto :eof
 

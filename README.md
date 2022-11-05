@@ -71,19 +71,27 @@ Useful aliases and utilities for Windows CMD.
 
 代理地址与端口需在同一目录下的 `proxy.conf` 中配置，`proxy` 将据此设置 `HTTP(S)_PROXY` 的值 。
 
-### [`pg`](alias/pg.cmd)
+- [`pg`](alias/pg.cmd)
 
-> - 参数：`pg *`  ( `*` 表示 `wget` 本身可以接收的参数)
-> - 别名：`proxy on & wget *`
-> - 配置：引用 `proxy` 的配置 ( `alias/proxy.conf` )
+  > - 参数：`pg *`  ( `*` 表示 `wget` 本身可以接收的参数)
+  > - 别名：`proxy on & wget *`
 
-使 wget 通过代理下载文件。
+  使 wget 通过代理下载文件。
 
-近似等效于 `wget -e use_proxy=yes -e https_proxy=http://127.0.0.1:1080 *` 。
+  近似等效于 `wget -e use_proxy=yes -e https_proxy=http://127.0.0.1:1080 *` 。
+
+- [`ptest`](alias/ptest.cmd)
+
+  > - 参数：`ptest [any]`
+
+  通过下载一个 10 MiB 的文件，来测试当前代理的下载速度。
+
+  如果附带任意参数，还将下载一个 100 MiB 的文件。
 
 ## 注意事项
 
-- 原则上，一个文件对应一个命令，且修改文件名不应影响命令的使用。即用户可以自定义命令名。
+- 原则上，一个文件对应一个命令，且修改文件名不应影响命令的使用。即用户可以自定义命令名。  
+  但二级命令依赖于其基础命令，相关文件内容需要同步修改。
 - 如果命令需要配置文件，配置文件应与命令同名。
 
 ## License

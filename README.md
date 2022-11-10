@@ -75,6 +75,7 @@ Useful aliases and utilities for Windows CMD.
 
   > - 参数：`pg *`  ( `*` 表示 `wget` 本身可以接收的参数)
   > - 别名：`proxy on & wget *`
+  > - 依赖：[`wget.exe`](https://eternallybored.org/misc/wget/)
 
   使 wget 通过代理下载文件。
 
@@ -83,10 +84,22 @@ Useful aliases and utilities for Windows CMD.
 - [`ptest`](alias/ptest.cmd)
 
   > - 参数：`ptest [any]`
+  > - 依赖：[`wget.exe`](https://eternallybored.org/misc/wget/)
 
   通过下载一个 10 MiB 的文件，来测试当前代理的下载速度。
 
   如果附带任意参数，还将下载一个 100 MiB 的文件。
+
+### [`za`](alias/za.cmd)
+
+> - 参数：`za [OPTIONS] [<FILES_OR_DIRS>...]`
+> - 帮助：`za help`
+> - 依赖：
+>   - `7za.exe` from [`7zXXXX-extra.7z`](https://7-zip.org/download.html)
+>   - `7z.sfx` (optional) from `7zXXXX-x64.exe`
+>   - `7zCon.sfx` (optional) from `7zXXXX-x64.exe`
+
+`7za` 命令的实用包装。
 
 ## 注意事项
 
